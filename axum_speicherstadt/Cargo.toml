@@ -1,0 +1,12 @@
+[package]
+name = "axum_speicherstadt"
+version = "0.1.0"
+edition = "2021"
+authors = ["Niclas Klugmann <niclas@klugmann.de>"]
+
+[dependencies]
+axum = { version = "0.8.1", default-features = false, features = ["json"] }
+serde = { version = "1.0.217", default-features = false, features = ["derive", "std"] }
+serde_json = { version = "1.0.134", default-features = false, features = ["std"] }
+tower-service = "0.3.3"
+unicode-xid = "0.2.6"
